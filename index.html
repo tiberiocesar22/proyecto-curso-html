@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-ico">
+    <title>Presentacion</title>
+
+    <style>
+        body {
+            font-family: "Lucida Console", "Courier New", monospace;
+            background: linear-gradient(to right, rgb(189, 189, 255), rgb(255, 233, 236));
+            padding: 0;
+            margin: 0;
+        }
+
+        header {
+            text-align: center;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        li {
+            float: left;
+        }
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover:not(.active) {
+            background-color: #111;
+        }
+
+        .active {
+            background-color: #92a4ff;
+        }
+
+        h1 {
+            background-color: black;
+            padding: 10px;
+            margin: 0;
+            color: #92a4ff;
+        }
+
+        h2 {
+            font-size: 24px;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 100%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 1.5;
+            margin-bottom: 20px;
+        }
+
+        .image {
+            float: right;
+            margin: 0 0 20px 20px;
+            max-width: 25%;
+            height: auto;
+        }
+
+        .image2 {
+            float: left;
+            margin: 0 20px 20px 0;
+            max-width: 25%;
+            height: auto;
+        }
+
+        .article {
+            float: left;
+            width: 70%;
+            background-color: #FFF;
+            padding: 10px;
+            margin: 10px;
+            border: 1px solid #CCC;
+        }
+
+        .footer {
+            background-color: #333;
+            color: #FFF;
+            padding: 10px;
+            text-align: center;
+            clear: both;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <H1>Diseño WEB....Arduino/ESP32</H1>
+        <hr>
+        <nav>
+            <ul>
+                <li><a class="active" href="index.html">HOME</a></li>
+                <li><a href="preferencias.html">PREFERENCIAS</a></li>
+                <li><a href="audiovisuales.html">AUDIOVISUALES</a></li>
+                <li><a href="contacto.html">CONTACTOS</a></li>
+            </ul>
+
+        </nav>
+    </header>
+    <br>
+    <br>
+    <br>
+    <br>
+    <hr>
+    <h2 style="margin: 15px;">Automatismo Masivo...IoT, Internet de las cosas.... </h2>
+    <hr>
+
+    <article class="container">
+        <h3>Introduccion a Arduino</h3>
+        <img class="image" src="/assets/img/Arduino.jpg" alt="Arduino Uno">
+        <p>
+            <b>Arduino</b> es una plataforma de hardware y software de código abierto diseñada para la creación de proyectos
+            electrónicos interactivos. Se basa en un microcontrolador programable y proporciona una variedad de placas
+            de desarrollo, entornos de programación y bibliotecas de software para facilitar la creación de dispositivos
+            electrónicos y proyectos interactivos.
+        </p>
+        <img class="image2" src="/assets/img/ESP32.jpg" alt="ESP32 El Modulo Wifi Bluetooth">
+        <p>
+            El chip <b>ESP32</b> viene con 48 pines con múltiples funciones. No todos los pines están expuestos en todas las
+            placas de desarrollo ESP32 y algunos pines no se pueden utilizar.
+
+            Hay muchas preguntas sobre cómo utilizar los GPIO <b>ESP32</b>. ¿Qué pines deberías usar? ¿Qué pines deberías
+            evitar usar en tus proyectos? Esta publicación pretende ser una guía de referencia simple y fácil de seguir
+            para los GPIO <b>ESP32</b>.
+        </p>
+        <img class="image" src="/assets/img/PinesESP32.jpg" alt="Pines ESP32">
+        <p>
+            Las funciones ADC (conversor analógico-digital) y DAC (conversor digital-analógico) están asignadas a pines
+            estáticos específicos. Sin embargo, usted puede decidir qué pines son UART, I2C, SPI, PWM, etc - sólo tiene
+            que asignarlos en el código. Esto es posible gracias a la función de multiplexación del chip ESP32.
+
+            Aunque puede definir las propiedades de los pines en el software, hay pines asignados por defecto como se
+            muestra en la siguiente figura (este es un ejemplo para la placa ESP32 DEVKIT V1 DOIT con 36 pines - la
+            ubicación de los pines puede cambiar dependiendo del fabricante).
+        </p>
+    </article>
+
+    <footer class="footer">
+        <p> Derechos Reservados &copy; 2023 </p>
+
+    </footer>
+</body>
+
+</html>
